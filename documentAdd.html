@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Project 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Lato&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="css/uikit.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>    
+    <!-- Home Page Section -->
+    <section class="main-section">
+        <div class="admin-section-top">
+            <div>
+                <div class="uk-section-secondary uk-preserve-color">                    
+                    <div uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-dark; top: 200">
+                        <nav class="uk-navbar-container" uk-navbar="mode: click;">
+                            <div class="uk-navbar-left">
+                                <!-- <a class="uk-navbar-item uk-logo logo-size" href="index.html"><img src="img/logo_2_w.png" alt="zeros"></a>     -->
+                                <a class="uk-navbar-item uk-logo logo-size" href="dashboard.html">Project 1</a>    
+                            </div>
+                            <div class="uk-navbar-right uk-dark">
+                                <ul class="uk-navbar-nav uk-iconnav">
+                                    <li>
+                                        <a href="dashboard.html" class="active" uk-toggle><span uk-icon="heart"></span> Dashboard </a>
+                                    </li>      
+                                    <li class="">
+                                        <a href="index.html">Logout</a>
+                                    </li>                                                                 
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- itemsList -->
+    <section id="litigation-list">
+        <div class="uk-container">
+            <div class="head">
+                <h1 class="uk-heading-bullet">Document Upload</h1>
+                <p class="uk-heading-line"><span>Form For</span></p>
+            </div>
+
+            <p>Please Fill Up the Following Form for the DOCUMENT Upload Completion</p>
+
+            <div class="uk-child-width-1@m uk-margin" uk-grid>
+                <form class="uk-form-horizontal uk-margin-large">
+                    <!-- DOCUMENT FORM SECTION -->
+                    <div>
+                        <div class="uk-card uk-card-primary uk-card-hover uk-card-body">
+                            <h3 class="uk-card-title">Documet Information</h3>
+                        </div>
+                        <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+
+        
+                            <div class="uk-margin">
+                                <label class="uk-form-label" for="title">Title</label>
+                                <div class="uk-form-controls">
+                                    <input class="uk-input" id="title" type="text" name="title" placeholder="Title">
+                                </div>
+                            </div>
+        
+                            <div class="uk-margin">
+                                <label class="uk-form-label" for="summary">Summary</label>
+                                <div class="uk-form-controls">
+                                    <textarea class="uk-textarea" id="summary" rows="5" name="summary" placeholder="Summary"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="uk-margin">
+                                <label class="uk-form-label" for="description">Description</label>
+                                <div class="uk-form-controls">
+                                    <textarea class="uk-textarea" id="description" rows="5" name="description" placeholder="Description"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="uk-margin">
+                                <label class="uk-form-label" for="category">Category</label>
+                                <div class="uk-form-controls">
+                                    <select class="uk-select" id="category" name="category">
+                                        <option>Category Title</option>
+                                        <option>Category Title</option>
+                                        <option>Category Title</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="uk-margin">
+                                <label class="uk-form-label" for="type">Type</label>
+                                <div class="uk-form-controls">
+                                    <select class="uk-select" id="type" name="type">
+                                        <option>Paid</option>
+                                        <option>Free</option>                                        
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="uk-margin">
+                                <label class="uk-form-label" for="author">Author</label>
+                                <div class="uk-form-controls">
+                                    <input class="uk-input" id="author" type="text" name="author" placeholder="Author">
+                                </div>
+                            </div>
+
+                            <div class="uk-margin">
+                                <label class="uk-form-label" for="docs">Upload Docs</label>
+                                <div class="uk-form-controls">
+                                    <div uk-form-custom>
+                                        <input type="file" name="docs">
+                                        <button class="uk-button uk-button-default" type="button" tabindex="-1">Select</button>
+                                    </div>
+                                </div>                        
+                            </div>  
+
+                            <div class="uk-margin">
+                                <label class="uk-form-label" for="docs">Upload Thumbnail</label>
+                                <div class="uk-form-controls">
+                                    <div uk-form-custom>
+                                        <input type="file" name="thumb">
+                                        <button class="uk-button uk-button-default" type="button" tabindex="-1">Select</button>
+                                    </div>
+                                </div>                        
+                            </div>  
+                        </div>
+                    </div> 
+                    <div class="uk-margin uk-flex uk-flex-right">
+                        <button class="uk-button uk-button-primary" type="button" tabindex="-1">Save</button>
+                        <button class="uk-button uk-button-Danger" type="button" tabindex="-1">Cancel</button>                     
+                    </div>  
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer">
+        <div class="uk-padding">                            
+            <div class="uk-flex uk-flex-wrap uk-flex-wrap-around uk-flex-between uk-flex-middle">
+                <!-- <a class="uk-navbar-item uk-logo logo-size" href="index.html"><img src="img/logo_2.png" alt="zeros"></a>    -->
+                <a class="uk-navbar-item uk-logo logo-size" href="index.html">Project 1</a>  
+                <p class="uk-text-center"> <span class="zeros-sub-head copy">Copyright</span>  © <a href="#">innsire</a>@2020</p>
+            </div>                
+        </div>
+    </section>
+
+    <script src="js/uikit-icons.min.js"></script>
+    <!-- <script src="js/uikit.js"></script> -->
+    <script src="js/uikit.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
